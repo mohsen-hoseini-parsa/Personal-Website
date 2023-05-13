@@ -11,7 +11,32 @@
     --section-bg-color: #fff;
     --Tiffany-Blue-color: #0ABEAD;
     --Venetian-Red: #F57F17;
+    --primery-font-bold: "Poppins Bold", Arial, Helvetica, sans-serif;
+    --primary-font-SemiBold: "Poppins SemiBold", Arial, Helvetica, sans-serif;
+    --secondary-font-md: "Poppins Medium", Arial, Helvetica, sans-serif;
+    --secondary-font-black: "Poppins Black", Arial, Helvetica, sans-serif;
 }
+
+/* 
+
+
+---Reset Styles
+
+
+*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+
 
 
 /*
@@ -35,4 +60,115 @@ body {
     font-family: "Poppins";
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+
+/*
+
+
+--Header
+
+
+*/
+
+.header {
+    background-color: var(--app-bg-color);
+    box-shadow: 0 .5rem 4rem rgba(4, 195, 255, .16);
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.container {}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: var(--secondary-font-black);
+    font-size: 7rem;
+    margin: 2rem 0;
+    color: var(--Tiffany-Blue-color);
+}
+
+.menu {
+    display: flex;
+
+
+}
+
+.menu__item {
+    margin-left: 4rem;
+    font-family: var(--secondary-font-md);
+    color: var(--text-color);
+}
+
+/* .menu__item:first-child {
+    margin-left: 0;
+} */
+
+.menu__link {
+    display: inline-block;
+    transition: all 180ms ease-in;
+}
+
+.menu__link:hover {
+    color: var(--Tiffany-Blue-color);
+}
+
+.menu__link--active {
+    color: var(--Tiffany-Blue-color);
+}
+
+
+.nav__toggle-icon {
+    display: none;
+    width: 4.5rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.nav__toggle-line {
+    position: relative;
+}
+
+.nav__toggle-line,
+.nav__toggle-line::after,
+.nav__toggle-line::before {
+    content: " ";
+    width: 4rem;
+    height: .4rem;
+    background-color: var(--Tiffany-Blue-color);
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+}
+
+.nav__toggle-line::before {
+    top: 1.2rem;
+    position: absolute;
+}
+
+.nav__toggle-line::after {
+    bottom: 1.2rem;
+    position: absolute;
+}
+
+.nav__toggle-icon--open .nav__toggle-line::before {
+    transform: translateY(-1.2rem) rotate(45deg);
+}
+
+
+.nav__toggle-icon--open .nav__toggle-line::after {
+    transform: translateY(1.2rem) rotate(-45deg);
+}
+
+.nav__toggle-icon--open .nav__toggle-line {
+    background-color: transparent;
 }

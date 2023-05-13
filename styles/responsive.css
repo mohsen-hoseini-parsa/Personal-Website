@@ -1,0 +1,69 @@
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+    .nav-logo {
+        font-size: 4.5rem;
+    }
+
+    .menu__item {
+        margin-left: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 100%;
+        display: inline-block;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: all 250ms linear;
+        height: 0;
+        overflow: hidden;
+        background-color: rgb(231, 228, 228);
+    }
+
+    .menu--open {
+        height: 41rem;
+        border-top: 0.3rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    .menu__item {
+        margin-left: 0;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #fff;
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    .menu__item:first-child {
+        margin-top: 2rem;
+    }
+
+    .nav__toggle-icon {
+        display: flex;
+    }
+
+    .cover {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 10%);
+        z-index: -1;
+        opacity: 0;
+        transition: all 200ms ease-in;
+    }
+
+    .cover--show {
+        opacity: 1;
+        z-index: 99;
+    }
+}
+
+@media screen and (max-width: 576px) {}
