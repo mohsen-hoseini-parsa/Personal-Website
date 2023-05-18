@@ -5,12 +5,12 @@
 
 
 :root {
+    --primary-color: #0ABEAD;
+    --secondary-color: #F57F17;
     --text-color: #333333;
     --shadow-color: rgba(19, 182, 255, 0.24);
     --app-bg-color: #fff;
     --section-bg-color: #fff;
-    --primary-color: #0ABEAD;
-    --secondary-color: #F57F17;
     --primary-font-bold: "Poppins Bold", Arial, Helvetica, sans-serif;
     --primary-font-SemiBold: "Poppins SemiBold", Arial, Helvetica, sans-serif;
     --secondary-font-md: "Poppins Medium", Arial, Helvetica, sans-serif;
@@ -55,12 +55,54 @@ ul {
     border-radius: 5rem;
 }
 
-.home__link--orange {
+.home__link--orange,
+.about__link--orange {
     background-color: var(--secondary-color);
     box-shadow: 0 1.3rem 1.8rem -0.5rem rgba(245, 127, 23, 40%);
 
 }
 
+.section-head {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.section-head__title {
+    font-family: var(--primary-font-bold);
+    color: var(--primary-color);
+    font-size: 4.8rem;
+    margin: 0;
+
+}
+
+.section-head__caption {
+    color: var(--text-color);
+    word-spacing: 1rem;
+
+}
+
+.section-head__line {
+    display: block;
+    width: 24rem;
+    height: .2rem;
+    background-color: var(--primary-color);
+    margin: 3rem auto;
+    position: relative;
+}
+
+.section-head__line::after {
+    content: " ";
+    position: absolute;
+    width: 3.8rem;
+    height: 1.2rem;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10rem;
+}
 
 /* 
 
@@ -104,8 +146,8 @@ body {
     font-family: "Poppins";
     font-size: 1.6rem;
     line-height: 1.5;
-    color: var(--text-color);
     background-color: var(--app-bg-color);
+    color: var(--text-color);
     padding-top: 13rem;
 }
 
@@ -241,7 +283,7 @@ body {
 .home {
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 6rem;
     background-image: url(../images/shapes/header-shape.svg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -287,7 +329,8 @@ body {
 
 }
 
-.home__link {
+.home__link,
+.about__link {
     background-color: var(--primary-color);
     box-shadow: 0 1.3rem 1.8rem -0.5rem rgba(11, 190, 173, 40%);
 }
@@ -314,3 +357,110 @@ body {
 
 
 
+/* 
+
+
+--About Us Section--
+
+
+*/
+
+.aboutus {
+    margin-top: 6rem;
+}
+
+.section-head {}
+
+.section-head__title {}
+
+.section-head__caption {}
+
+.section-head__line {}
+
+
+
+.about {
+    display: flex;
+    box-shadow: 0 0 5rem 1.5rem rgba(96, 233, 255, 0.27);
+
+}
+
+.about__cover {
+    flex-basis: 50%;
+    flex-shrink: 0;
+
+
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__content {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    padding: 4rem;
+
+
+}
+
+.about__title {
+    font-family: var(--primary-font-SemiBold);
+    font-size: 2.4rem;
+    margin: 0;
+    margin-bottom: 1.8rem;
+
+}
+
+.about__description {
+    margin: 0;
+    max-width: 53rem;
+    margin-bottom: 6rem;
+}
+
+.about__list-title {
+    margin: 0;
+    font-family: var(--primary-font-SemiBold);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-list {
+margin-bottom: 3rem;
+
+}
+
+.about-list__item {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 4rem;
+
+}
+
+.about-list__item::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--secondary-color);
+     border-radius:4rem;
+     top: 0;
+     left: 1rem;
+     bottom: 0;
+     margin: auto;
+     
+}
+
+.about__links-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.about__link {}
+
+.about__link--orange {}
