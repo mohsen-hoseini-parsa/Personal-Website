@@ -9,9 +9,9 @@
     --shadow-color: rgba(19, 182, 255, 0.24);
     --app-bg-color: #fff;
     --section-bg-color: #fff;
-    --Tiffany-Blue-color: #0ABEAD;
-    --Venetian-Red: #F57F17;
-    --primery-font-bold: "Poppins Bold", Arial, Helvetica, sans-serif;
+    --primary-color: #0ABEAD;
+    --secondary-color: #F57F17;
+    --primary-font-bold: "Poppins Bold", Arial, Helvetica, sans-serif;
     --primary-font-SemiBold: "Poppins SemiBold", Arial, Helvetica, sans-serif;
     --secondary-font-md: "Poppins Medium", Arial, Helvetica, sans-serif;
     --secondary-font-black: "Poppins Black", Arial, Helvetica, sans-serif;
@@ -36,13 +36,57 @@ ul {
 
 }
 
+/* 
+
+---Component
+
+*/
+
+.app-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: #fff;
+    width: 18rem;
+    height: 5rem;
+    font-family: var(--primary-font-SemiBold);
+    font-size: 1.2rem;
+    border-radius: 5rem;
+}
+
+.home__link--orange {
+    background-color: var(--secondary-color);
+    box-shadow: 0 1.3rem 1.8rem -0.5rem rgba(245, 127, 23, 40%);
+
+}
+
+
+/* 
+
+---Helper classes
+
+*/
+
+.align-items-center {
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
 
 
 
 /*
 
 
-----App
+--App--
 
 
 */
@@ -60,7 +104,12 @@ body {
     font-family: "Poppins";
     font-size: 1.6rem;
     line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--app-bg-color);
+    padding-top: 13rem;
 }
+
+
 
 
 /*
@@ -78,6 +127,7 @@ body {
     position: fixed;
     right: 0;
     left: 0;
+    top: 0;
 }
 
 .container {}
@@ -90,21 +140,20 @@ body {
 
 .nav-logo {
     font-family: var(--secondary-font-black);
-    font-size: 7rem;
-    margin: 2rem 0;
-    color: var(--Tiffany-Blue-color);
+    font-size: 6rem;
+    margin: 1rem 0;
+    color: var(--primary-color);
 }
 
 .menu {
     display: flex;
 
-
+    color: var(--text-color);
 }
 
 .menu__item {
     margin-left: 4rem;
     font-family: var(--secondary-font-md);
-    color: var(--text-color);
 }
 
 /* .menu__item:first-child {
@@ -114,14 +163,16 @@ body {
 .menu__link {
     display: inline-block;
     transition: all 180ms ease-in;
+    color: var(--text-color);
+
 }
 
 .menu__link:hover {
-    color: var(--Tiffany-Blue-color);
+    color: var(--primary-color);
 }
 
 .menu__link--active {
-    color: var(--Tiffany-Blue-color);
+    color: var(--primary-color);
 }
 
 
@@ -145,7 +196,7 @@ body {
     content: " ";
     width: 4rem;
     height: .4rem;
-    background-color: var(--Tiffany-Blue-color);
+    background-color: var(--primary-color);
     border-radius: 2rem;
     transition: all 200ms ease-in-out;
 }
@@ -172,3 +223,94 @@ body {
 .nav__toggle-icon--open .nav__toggle-line {
     background-color: transparent;
 }
+
+/*
+
+--Main--
+
+*/
+
+.main {}
+
+/* 
+
+---Home---
+
+*/
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    background-image: url(../images/shapes/header-shape.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 82.5rem;
+    width: 100%;
+
+}
+
+.home__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.home__name {
+    margin: 0;
+    font-family: var(--primary-font-SemiBold);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.home__name span {
+    color: var(--secondary-color);
+}
+
+.home__title {
+    font-family: var(--primary-font-bold);
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 5rem;
+}
+
+.home__description {
+    margin-top: .95rem;
+    font-size: 1.6rem;
+    opacity: 0.7;
+
+}
+
+.home__links-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+
+}
+
+.home__link {
+    background-color: var(--primary-color);
+    box-shadow: 0 1.3rem 1.8rem -0.5rem rgba(11, 190, 173, 40%);
+}
+
+
+.home__user-photo {
+    width: 55rem;
+    height: 55rem;
+    border-radius: 100%;
+    background: url(../images/header-avatar_auto_x1.jpg);
+    background-size: cover;
+    background-position: top center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5rem 1.5rem rgba(96, 233, 255, 0.27);
+    border: 2rem solid var(--app-bg-color);
+
+}
+
+.home__shape {
+    width: 100%;
+}
+
+
+
+
