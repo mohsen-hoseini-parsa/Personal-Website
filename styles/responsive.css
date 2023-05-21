@@ -1,7 +1,17 @@
-@media screen and (max-width: 1921px) {
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+
     .home__user-photo {
 
-        margin-left: 12rem
+        margin-left: 3rem;
+        width: 57rem;
+        height: 57rem;
+    }
+
+    .home {
+        background-size: contain;
     }
 }
 
@@ -46,6 +56,11 @@
     .home {
 
         height: 70rem;
+    }
+
+    .service {
+        padding: 7rem 2rem;
+        ;
     }
 }
 
@@ -179,6 +194,20 @@
     .about__content {
         padding: 2rem 4rem;
     }
+
+    .service {
+        padding: 4rem 1rem;
+    }
+
+    .service__logo {
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .service__wave {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -214,12 +243,13 @@
         width: 100%;
     }
 
-
-
     .home__user-photo {
-        width: 100%;
+        width: 28rem;
+        height: 28rem;
     }
-
+    .aboutus {
+        margin-top: 4rem;
+    }
     .about__links-wrapper {
         flex-direction: column;
         gap: 1.5rem;
@@ -229,8 +259,11 @@
         font-size: 2.3rem;
     }
 
-    .about__description {
-        text-align: center;
+    .service {
+        padding: 5rem 2rem;
     }
 
+    .service__wave {
+        display: block;
+    }
 }

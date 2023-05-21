@@ -104,6 +104,8 @@ ul {
     border-radius: 10rem;
 }
 
+
+
 /* 
 
 ---Helper classes
@@ -289,7 +291,6 @@ body {
     background-position: bottom;
     height: 82.5rem;
     width: 100%;
-
 }
 
 .home__content {
@@ -429,7 +430,7 @@ body {
 }
 
 .about-list {
-margin-bottom: 3rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -446,12 +447,12 @@ margin-bottom: 3rem;
     width: 1.5rem;
     height: 1.5rem;
     background-color: var(--secondary-color);
-     border-radius:4rem;
-     top: 0;
-     left: 1rem;
-     bottom: 0;
-     margin: auto;
-     
+    border-radius: 4rem;
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+    margin: auto;
+
 }
 
 .about__links-wrapper {
@@ -464,3 +465,83 @@ margin-bottom: 3rem;
 .about__link {}
 
 .about__link--orange {}
+
+
+
+/* 
+
+
+--Services Section-->
+
+
+*/
+
+.services {
+    margin-top: 6rem;
+}
+
+.section-head {}
+
+.section-head__title {}
+
+.section-head__caption {}
+
+.section-head__line {}
+
+
+
+.service {
+    padding: 7rem 4rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    height: 100%;
+
+}
+
+.service--purple {
+    background-color: #8540FF;
+}
+
+.service--yellow {
+    background-color: #FFC50C;
+}
+
+.service--pink {
+    background-color: #EC407A;
+}
+
+.service--orange {
+    background-color: #FF6331;
+}
+
+.service--blue {
+    background-color: #13B6FF;
+}
+
+.service--green {
+    background-color: #49AF46;
+}
+
+.service__logo {}
+
+.service__title {
+    font-family: var(--primary-font-bold);
+    font-size: 2.4rem;
+    margin-bottom: 0;
+    margin-top: 1.6rem;
+}
+
+.service__caption {
+    margin-bottom: 0;
+}
+
+.service__wave{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: -1;
+}
+
