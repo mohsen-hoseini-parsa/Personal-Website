@@ -132,8 +132,6 @@ ul {
 
 
 
-
-
 /*
 
 
@@ -722,7 +720,7 @@ Resume Section-->
 */
 
 .portfolio {
-    margin-top: 12rem;
+    margin: 12rem 4rem 0 4rem;
 }
 
 .portfolio-list {
@@ -752,11 +750,13 @@ Resume Section-->
     opacity: 0;
     transition: opacity .2s ease-in;
 }
-.portfolio-content--show{
+
+.portfolio-content--show {
     height: auto;
     overflow: visible;
     opacity: 1;
 }
+
 .portfolio-content__img {
     width: 100%;
 
@@ -770,10 +770,116 @@ Resume Section-->
 span.swiper-pagination-bullet {
     width: 1.8rem;
     height: 1.8rem;
-    border:.3rem solid  #BFBEBE;
+    border: .3rem solid #BFBEBE;
     background-color: #fff;
 }
 
 span.swiper-pagination-bullet-active {
     border-color: var(--primary-color);
+}
+
+
+/* 
+
+
+pricing Section--->
+
+
+ */
+
+.pricing {
+    margin-top: 12rem;
+    box-shadow: 0 0 6rem rgb(19 182 255 / 24%);
+    margin-bottom: 10rem;
+    margin-top: 17rem;
+    padding: 8rem 0 17.5rem 0;
+    transform: skewY(-6deg);
+    background-color: var(--section-bg-color);
+
+}
+
+
+.package {
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
+}
+
+.package__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    color: #fff;
+}
+
+.package__type {
+    margin: 0;
+    font-family: var(--primary-font-SemiBold);
+    font-size: 3.2rem;
+}
+
+.package__price {
+    font-family: var(--primary-font-SemiBold);
+    font-size: 2.6rem;
+    display: block;
+    margin-bottom: .5rem;
+
+}
+
+.package__filter {}
+
+.package__body {
+
+    padding: 3rem 0 3.5rem 0;
+}
+
+.package_options {
+    width: 17rem;
+    margin: 0 auto;
+}
+
+.package-option__item {
+    margin-bottom: 2rem;
+}
+.package-option__item:last-child{
+    margin-bottom: 0;
+}
+.package-options__icon {
+    margin-right: 1rem;
+}
+
+.package__link {
+    margin: 2.5rem auto 0 auto;
+    width: 18.5rem;
+    height: 5.4rem;
+    font-size: 1.5rem;
+}
+
+.package__head--orange {
+    background-color: #FF6331;
+}
+
+.package__head--purple {
+    background-color: #803AFB;
+}
+
+.package__head--pink {
+    background-color: #F5276C;
+}
+
+.app-btn--orange {
+    background-color: #FF6331;
+    box-shadow: 0 3rem 3rem -1rem rgba(245, 127, 23, 24%);
+
+}
+
+.app-btn--purple {
+    background-color: #803AFB;
+    box-shadow: 0 3rem 3rem -1rem rgba(128, 58, 251, 24%);
+
+}
+
+.app-btn--pink {
+    background-color: #F5276C;
+    box-shadow: 0 3rem 3rem -1rem rgba(245, 39, 108, 24%);
 }
