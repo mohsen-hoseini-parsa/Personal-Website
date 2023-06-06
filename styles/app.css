@@ -561,7 +561,7 @@ body {
 
 */
 
-.resume{
+.resume {
     margin-top: 12rem;
     box-shadow: 0 0 6rem rgb(19 182 255 / 24%);
     margin-bottom: 10rem;
@@ -569,7 +569,8 @@ body {
     transform: skewY(-6deg);
     background-color: var(--section-bg-color);
 }
-.resume-list{
+
+.resume-list {
     background-color: var(--app-bg-color);
     box-shadow: 0 0 4rem rgb(96 233 255 / 27%);
     position: relative;
@@ -580,7 +581,8 @@ body {
     min-height: 40rem;
     margin-right: 3rem;
 }
-.resume-list::before{
+
+.resume-list::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -590,7 +592,8 @@ body {
     width: 4rem;
     z-index: -1;
 }
-.resume-list__item{
+
+.resume-list__item {
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -598,10 +601,12 @@ body {
     padding: 1rem 0;
     cursor: pointer;
 }
-.resume-list__item:last-child{
+
+.resume-list__item:last-child {
     margin-bottom: 0;
 }
-.resume-list__item::before{
+
+.resume-list__item::before {
     content: "";
     position: absolute;
     left: 0;
@@ -614,18 +619,22 @@ body {
     transition: all 0.2s ease-in;
     max-width: 27rem;
 }
-.resume-list__item--active{
+
+.resume-list__item--active {
     color: #fff;
 }
-.resume-list__item--active::before{
+
+.resume-list__item--active::before {
     width: 100%;
 }
-.resume-list__icon{
+
+.resume-list__icon {
     width: 2.2rem;
     height: 2.2rem;
     margin: 0 .8rem;
 }
-.resume-list__text{
+
+.resume-list__text {
     font-family: "Poppins SemiBold";
     font-size: 1.8rem;
     margin-left: 2.5rem;
@@ -635,7 +644,7 @@ body {
 
 
 
-.resume-content{
+.resume-content {
     border-left: .2rem solid var(--primary-color);
     padding-left: 3rem;
     height: 0;
@@ -643,30 +652,36 @@ body {
     opacity: 0;
     transition: opacity 0.35s ease-in;
 }
-.resume-content--show{
+
+.resume-content--show {
     height: auto;
     overflow: visible;
     opacity: 1;
 }
-.resume-content__item{
+
+.resume-content__item {
     margin-bottom: 2rem;
 }
-.resume-content__item:last-child{
+
+.resume-content__item:last-child {
     margin-bottom: 0;
 }
-.resume-content__head{
+
+.resume-content__head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.resume-content__title{
+
+.resume-content__title {
     color: #FF5823;
     font-family: "Poppins SemiBold";
     font-size: 1.8rem;
     margin: 0;
     position: relative;
 }
-.resume-content__title::before{
+
+.resume-content__title::before {
     content: "";
     position: absolute;
     left: -4rem;
@@ -678,18 +693,87 @@ body {
     border-radius: 100%;
     margin: auto;
 }
-.resume-content__date{
+
+.resume-content__date {
     background-color: #F57F17;
     border-radius: 2rem;
     padding: .2rem 1.5rem;
     color: #fff;
-    box-shadow: 0 0 4rem rgba(245,127,23,24%);
+    box-shadow: 0 0 4rem rgba(245, 127, 23, 24%);
 }
-.resume-content__subtitle{
+
+.resume-content__subtitle {
     font-family: "Poppins SemiBold";
     font-size: 1.6rem;
     margin: 1rem 0;
 }
-.resume-content__description{
+
+.resume-content__description {
     margin: 0;
+}
+
+
+/*
+
+
+Resume Section-->
+
+
+*/
+
+.portfolio {
+    margin-top: 12rem;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    /* gap: 3rem; */
+    flex-wrap: wrap;
+}
+
+.portfolio-list__item {
+    padding: 1.2rem 3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.portfolio-list__item--active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.portfolio-content {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+.portfolio-content--show{
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+}
+.portfolio-content__img {
+    width: 100%;
+
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 1rem;
+}
+
+span.swiper-pagination-bullet {
+    width: 1.8rem;
+    height: 1.8rem;
+    border:.3rem solid  #BFBEBE;
+    background-color: #fff;
+}
+
+span.swiper-pagination-bullet-active {
+    border-color: var(--primary-color);
 }
