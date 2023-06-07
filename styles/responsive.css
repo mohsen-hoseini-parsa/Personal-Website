@@ -306,6 +306,9 @@
         padding: 5rem 4rem;
 
     }
+    .footer__wrapper{
+        flex-wrap: wrap;
+    }
 
 }
 
