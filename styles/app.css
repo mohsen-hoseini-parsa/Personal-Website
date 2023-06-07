@@ -841,9 +841,11 @@ pricing Section--->
 .package-option__item {
     margin-bottom: 2rem;
 }
-.package-option__item:last-child{
+
+.package-option__item:last-child {
     margin-bottom: 0;
 }
+
 .package-options__icon {
     margin-right: 1rem;
 }
@@ -882,4 +884,103 @@ pricing Section--->
 .app-btn--pink {
     background-color: #F5276C;
     box-shadow: 0 3rem 3rem -1rem rgba(245, 39, 108, 24%);
+}
+
+
+
+/* 
+
+
+Contact us Section---->
+
+
+*/
+
+.contactus {
+    margin-top: 12rem;
+}
+
+.contactus__wrapper {
+    background-image: url(../images/map_auto_x1.jpg);
+    background-size: cover;
+    height: 78rem;
+    padding: 8rem 0 0 0;
+}
+
+.contactus__map {
+    width: 5.7rem;
+    height: 5.7rem;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34rem;
+    left: 44rem;
+    box-shadow: 0 0 5rem 1rem rgba(96, 233, 255, 27%);
+
+}
+
+.contactus__icon {
+    width: 2rem;
+}
+
+.contact {
+    background-color: var(--app-bg-color);
+    box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
+    max-width: 55rem;
+    padding: 5.5rem 5rem;
+    margin-left: auto;
+
+}
+
+.contact__title {
+    font-family: var(--primary-font-bold);
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.contact__input {
+    border: none;
+    outline: none;
+    padding: 1.4rem 2.5rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+    box-shadow: 0 0 5rem 1rem rgba(96, 233, 255, 27%);
+}
+
+.contact__input::placeholder {
+    color: inherit;
+}
+
+
+.contact__input--textarea {
+    resize: vertical;
+    max-height: 18rem;
+    min-height: 5rem;
+}
+
+.contact__input:hover {
+    background-color:#0abeacbf;
+    color: #fff;
+}
+
+.contact__submit {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.4rem;
+    border-radius: 5rem;
+    border: none;
+    font-family: var(--primary-font-SemiBold);
+    font-size: 1.8rem;
+    cursor: pointer;
 }

@@ -66,6 +66,10 @@
     .resume-list {
         margin-right: 0rem;
     }
+
+    .contactus__map {
+        left: 15rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -175,6 +179,14 @@
 
     .portfolio-list {
         flex-direction: column;
+    }
+
+    .contactus__map {
+        display: none;
+    }
+
+    .contact {
+        margin-right: auto;
     }
 }
 
@@ -290,6 +302,10 @@
         margin-bottom: 0;
         padding: 0 2rem;
     }
+    .contact {
+        padding: 5rem 4rem;
+
+    }
 
 }
 
@@ -355,5 +371,9 @@
 
     .service__wave {
         display: block;
+    }
+    .contact {
+        padding: 3rem 2rem;
+
     }
 }
