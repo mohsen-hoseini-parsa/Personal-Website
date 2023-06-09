@@ -119,7 +119,7 @@ ul {
 }
 
 .reset-skew {
-    transform: skewY(6deg);
+    transform: translateZ(0) skewY(6deg);
 }
 
 .h-full {
@@ -196,7 +196,6 @@ body {
 
 .menu {
     display: flex;
-
     color: var(--text-color);
 }
 
@@ -211,8 +210,9 @@ body {
 
 .menu__link {
     display: inline-block;
-    transition: all 180ms ease-in;
-    color: var(--text-color);
+    transition: all 150ms ease-in;
+    color: inherit;
+    font-family: "Poppins Medium";
 
 }
 
@@ -220,7 +220,7 @@ body {
     color: var(--primary-color);
 }
 
-.menu__link--active {
+.menu__item--active {
     color: var(--primary-color);
 }
 
@@ -243,11 +243,11 @@ body {
 .nav__toggle-line::after,
 .nav__toggle-line::before {
     content: " ";
-    width: 4rem;
+    width: 4.5rem;
     height: .4rem;
     background-color: var(--primary-color);
     border-radius: 2rem;
-    transition: all 200ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .nav__toggle-line::before {
@@ -372,7 +372,7 @@ body {
 */
 
 .aboutus {
-    margin-top: 6rem;
+    margin-top: 8rem;
     background-color: var(--app-bg-color);
 }
 
@@ -483,7 +483,7 @@ body {
 */
 
 .services {
-    margin-top: 6rem;
+    margin-top: 8rem;
     background-color: var(--app-bg-color);
 }
 
@@ -509,22 +509,30 @@ body {
 
 .service--purple {
     background-color: #8540FF;
+    box-shadow: 0 0 4rem rgba(118, 13, 255,35%);
+
 }
 
 .service--yellow {
     background-color: #FFC50C;
-}
+    box-shadow: 0 0 4rem rgba(255, 197, 12,35%);
+} 
 
 .service--pink {
     background-color: #EC407A;
+    box-shadow: 0 0 4rem rgba(236, 64, 122, 35%);
 }
 
 .service--orange {
     background-color: #FF6331;
+    box-shadow: 0 0 4rem rgba(255, 99, 49,35%);
+
 }
 
 .service--blue {
     background-color: #13B6FF;
+    box-shadow: 0 0 4rem rgba(19, 182, 255,35%);
+
 }
 
 .service--green {
@@ -560,11 +568,11 @@ body {
 */
 
 .resume {
-    margin-top: 12rem;
+    margin-top: 13rem;
     box-shadow: 0 0 6rem rgb(19 182 255 / 24%);
-    margin-bottom: 10rem;
-    padding: 8rem 0;
-    transform: skewY(-6deg);
+    margin-bottom: 14rem;
+    padding: 11rem 0;
+    transform: translateZ(0) skewY(-6deg);
     background-color: var(--section-bg-color);
 }
 
@@ -720,7 +728,7 @@ Resume Section-->
 */
 
 .portfolio {
-    margin: 12rem 4rem 0 4rem;
+    margin: 8rem 9rem 0 9rem;
 }
 
 .portfolio-list {
@@ -736,7 +744,7 @@ Resume Section-->
     padding: 1.2rem 3rem;
     border-radius: 5rem;
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .portfolio-list__item--active {
@@ -788,12 +796,11 @@ pricing Section--->
  */
 
 .pricing {
-    margin-top: 12rem;
+    margin-top:15rem;
     box-shadow: 0 0 6rem rgb(19 182 255 / 24%);
     margin-bottom: 10rem;
-    margin-top: 17rem;
-    padding: 8rem 0 17.5rem 0;
-    transform: skewY(-6deg);
+    padding: 8rem 0 13rem 0;
+    transform:translateZ(0) skewY(-6deg);
     background-color: var(--section-bg-color);
 
 }
@@ -897,7 +904,7 @@ Contact us Section---->
 */
 
 .contactus {
-    margin-top: 12rem;
+    margin-top: 8rem;
 }
 
 .contactus__wrapper {
