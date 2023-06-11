@@ -1,6 +1,6 @@
+@import "fonts.css";
 @import "normalize.css";
 @import "grid.css";
-@import "fonts.css";
 
 
 
@@ -17,6 +17,34 @@
     --secondary-font-black: "Poppins Black", Arial, Helvetica, sans-serif;
 }
 
+:root.dark-theme {
+    --text-color: #95A5c6;
+    --section-bg-color: #1F2935;
+    --app-bg-color: #161D26;
+}
+
+:root.dark-theme .header,
+:root.dark-theme .home__user-photo,
+:root.dark-theme .about,
+:root.dark-theme .resume,
+:root.dark-theme .resume-list,
+:root.dark-theme .pricing,
+:root.dark-theme .package {
+    box-shadow: none;
+}
+
+:root.dark-theme .home {
+    background-image: url(../images/shapes/header-shape-dark.svg);
+}
+
+
+
+:root.dark-theme .contact__input,
+:root.dark-theme .contactus__map {
+    background-color: var(--app-bg-color);
+}
+
+
 /* 
 
 
@@ -24,6 +52,7 @@
 
 
 */
+
 
 a {
     text-decoration: none;
@@ -170,7 +199,7 @@ body {
 */
 
 .header {
-    background-color: var(--app-bg-color);
+    background-color: var(--section-bg-color);
     box-shadow: 0 .5rem 4rem rgba(4, 195, 255, .16);
     z-index: 100;
     position: fixed;
@@ -352,7 +381,7 @@ body {
     object-fit: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 5rem 1.5rem rgba(96, 233, 255, 0.27);
-    border: 2rem solid var(--app-bg-color);
+    border: 2rem solid var(--section-bg-color);
 
 }
 
@@ -509,14 +538,14 @@ body {
 
 .service--purple {
     background-color: #8540FF;
-    box-shadow: 0 0 4rem rgba(118, 13, 255,35%);
+    box-shadow: 0 0 4rem rgba(118, 13, 255, 35%);
 
 }
 
 .service--yellow {
     background-color: #FFC50C;
-    box-shadow: 0 0 4rem rgba(255, 197, 12,35%);
-} 
+    box-shadow: 0 0 4rem rgba(255, 197, 12, 35%);
+}
 
 .service--pink {
     background-color: #EC407A;
@@ -525,13 +554,13 @@ body {
 
 .service--orange {
     background-color: #FF6331;
-    box-shadow: 0 0 4rem rgba(255, 99, 49,35%);
+    box-shadow: 0 0 4rem rgba(255, 99, 49, 35%);
 
 }
 
 .service--blue {
     background-color: #13B6FF;
-    box-shadow: 0 0 4rem rgba(19, 182, 255,35%);
+    box-shadow: 0 0 4rem rgba(19, 182, 255, 35%);
 
 }
 
@@ -624,6 +653,7 @@ body {
     border-radius: 3rem;
     transition: all 0.2s ease-in;
     max-width: 27rem;
+    box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
 }
 
 .resume-list__item--active {
@@ -780,6 +810,7 @@ span.swiper-pagination-bullet {
     height: 1.8rem;
     border: .3rem solid #BFBEBE;
     background-color: #fff;
+    opacity: 1 !important;
 }
 
 span.swiper-pagination-bullet-active {
@@ -796,11 +827,11 @@ pricing Section--->
  */
 
 .pricing {
-    margin-top:15rem;
+    margin-top: 15rem;
     box-shadow: 0 0 6rem rgb(19 182 255 / 24%);
     margin-bottom: 10rem;
     padding: 8rem 0 13rem 0;
-    transform:translateZ(0) skewY(-6deg);
+    transform: translateZ(0) skewY(-6deg);
     background-color: var(--section-bg-color);
 
 }
@@ -838,6 +869,7 @@ pricing Section--->
 .package__body {
 
     padding: 3rem 0 3.5rem 0;
+    background-color: var(--app-bg-color);
 }
 
 .package_options {
@@ -977,7 +1009,7 @@ Contact us Section---->
 }
 
 .contact__input:hover {
-    background-color:#0abeacbf;
+    background-color: #0abeacbf;
     color: #fff;
 }
 
@@ -1001,40 +1033,50 @@ Footer------------>
 
 */
 
-.footer{
+.footer {
     background-color: var(--app-bg-color);
 }
-.footer__wrapper{
+
+.footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.7rem 0;
 }
-.footer__copy-right{
-font-family: var(--primary-font-SemiBold);
-letter-spacing: .4rem;
+
+.footer__copy-right {
+    font-family: var(--primary-font-SemiBold);
+    letter-spacing: .4rem;
 }
-.footer__socials{
+
+.footer__socials {
     display: flex;
     gap: 1rem;
 
 
 }
-.footer__social{
+
+.footer__social,
+.change-theme {
     width: 4.5rem;
     height: 4.5rem;
-    background-color:#1f2935;
+    background-color: #1f2935;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-.footer__social:hover{
+
+.footer__social:hover {
     background-color: var(--primary-color);
 }
-.footer__social svg{
+
+.footer__social svg,
+.change-theme svg {
     width: 3rem;
     height: 3rem;
     fill: var(--app-bg-color);
 }
+
 
